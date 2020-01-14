@@ -1,0 +1,19 @@
+<div class="parent">
+
+  <app-employee-list
+    class="child"
+    [data]="salesList"
+    department="Sales"
+    (add)="add(salesList, $event)"
+    (remove)="remove(salesList, $event)"
+  ></app-employee-list>
+
+  <app-employee-list
+    class="child"
+    [data]="rndList"
+    department="R&D"
+    (add)="add(rndList, $event)"
+    (remove)="remove(rndList, $event)"
+  ></app-employee-list>
+
+</div>
